@@ -9,27 +9,27 @@
 		</template>
 		<div class="control">
 			<label>RHP3 Websocket Port</label>
-			<input type="text" v-model="siaMuxWSPort" placeholder=":9984" />
+			<input type="text" v-model="siaMuxWSPort" placeholder=":4284" />
 		</div>
 		<div class="control">
 			<label>RHP3 Port</label>
-			<input type="text" v-model="siaMuxPort" placeholder=":9983" />
+			<input type="text" v-model="siaMuxPort" placeholder=":4283" />
 		</div>
 		<div class="control">
 			<label>RHP2 Port</label>
-			<input type="text" v-model="hostPort" placeholder=":9982" />
+			<input type="text" v-model="hostPort" placeholder=":4282" />
 		</div>
 		<div class="control">
 			<label>RPC Port</label>
-			<input type="text" v-model="rpcPort" placeholder=":9981" />
+			<input type="text" v-model="rpcPort" placeholder=":4281" />
 		</div>
 		<div class="control">
 			<label>API Listen Address</label>
-			<input type="text" v-model="apiAddr" placeholder="localhost:9980" />
+			<input type="text" v-model="apiAddr" placeholder="localhost:4280" />
 		</div>
 		<div class="control">
 			<label>API User Agent</label>
-			<input type="text" v-model="userAgent" placeholder="Sia-Agent" />
+			<input type="text" v-model="userAgent" placeholder="ScPrime-Agent" />
 		</div>
 		<div class="control">
 			<label>API Password</label>
