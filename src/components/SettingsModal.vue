@@ -71,14 +71,14 @@
 					</div>
 					<div class="control">
 						<label>API Address</label>
-						<input type="text" v-model="apiAddr" placeholder="localhost:9980" />
+						<input type="text" v-model="apiAddr" placeholder="localhost:4280" />
 						<transition name="fade" mode="out-in" appear>
 							<label class="error" v-if="errors['apiAddr']">{{ errors['apiAddr'] }}</label>
 						</transition>
 					</div>
 					<div class="control">
 						<label>API Agent</label>
-						<input type="text" v-model="apiAgent" placeholder="Sia-Agent" />
+						<input type="text" v-model="apiAgent" placeholder="ScPrime-Agent" />
 						<transition name="fade" mode="out-in" appear>
 							<label class="error" v-if="errors['apiAgent']">{{ errors['apiAgent'] }}</label>
 						</transition>
