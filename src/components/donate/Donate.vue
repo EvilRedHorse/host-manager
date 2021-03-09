@@ -22,12 +22,12 @@
 			</div>
 			<div class="fee-success" v-else key="success">
 				<h2 class="text-center text-success">Thank You!</h2>
-				<p>Sia Central appreciates your donation. We hope you continue to enjoy our apps and services!</p>
+				<p>We hope you continue to enjoy our apps and services!</p>
 				<p v-if="recurring">Your first donation of <span v-html="formatSiacoinString(feeAmount)" /> will occur at block {{ formatNumber(payoutHeight+4320) }} then again every {{ formatNumber(4320) }} blocks. You may cancel your donation from this dialog at any time.</p>
 			</div>
 		</transition>
 		<div class="text-center sponsor-link">
-			<a href="https://github.com/sponsors/siacentral">Sponsor Sia Central on GitHub</a>
+			<a href="https://github.com/sponsors/EvilRedHorse">Sponsor EvilRedHorse on GitHub</a>
 		</div>
 		<div class="fees-list" v-if="fees.length !== 0">
 			<h4>Recurring Donations</h4>
