@@ -1,12 +1,12 @@
 {
-  "name": "Sia-Host-Manager",
-  "version": "1.0.32",
+  "name": "ScPrime-Host-Manager",
+  "version": "1.0.0",
   "private": true,
-  "description": "User-friendly management utility for Sia storage network hosts. Provides easy configuration, better financials, and smart alerts to make hosting simpler.",
+  "description": "User-friendly management utility for ScPrime storage network hosts. Provides easy configuration, better financials, and smart alerts to make hosting simpler.",
   "author": {
-    "email": "hi@siacentral.com",
-    "name": "Sia Central",
-    "url": "https://siacentral.com"
+    "email": "evilredhorse@gmail.com",
+    "name": "ScPrime",
+    "url": "https://scpri.me"
   },
   "scripts": {
     "serve": "vue-cli-service electron:serve",
@@ -61,12 +61,12 @@
     "vue-template-compiler": "^2.6.12"
   },
   "bugs": {
-    "url": "https://github.com/siacentral/host-manager/issues"
+    "url": "https://github.com/EvilRedHorse/host-manager/issues"
   },
   "gitHooks": {
     "pre-commit": "lint-staged"
   },
-  "homepage": "https://siacentral.com/host-manager",
+  "homepage": "https://stats.scpri.me/",
   "license": "AGPLv3",
   "lint-staged": {
     "*.{js,vue}": [
