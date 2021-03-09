@@ -50,21 +50,21 @@
 					</div>
 					<div class="control">
 						<label>Host Port</label>
-						<input type="text" v-model="hostPort" placeholder=":9982" />
+						<input type="text" v-model="hostPort" placeholder=":4282" />
 						<transition name="fade" mode="out-in" appear>
 							<label class="error" v-if="errors['hostPort']">{{ errors['hostPort'] }}</label>
 						</transition>
 					</div>
 					<div class="control">
 						<label>SiaMux Port</label>
-						<input type="text" v-model="siaMuxPort" placeholder=":9983" />
+						<input type="text" v-model="siaMuxPort" placeholder=":4283" />
 						<transition name="fade" mode="out-in" appear>
 							<label class="error" v-if="errors['siaMuxPort']">{{ errors['siaMuxPort'] }}</label>
 						</transition>
 					</div>
 					<div class="control">
 						<label>RPC Port</label>
-						<input type="text" v-model="rpcPort" placeholder=":9981" />
+						<input type="text" v-model="rpcPort" placeholder=":4281" />
 						<transition name="fade" mode="out-in" appear>
 							<label class="error" v-if="errors['rpcPort']">{{ errors['rpcPort'] }}</label>
 						</transition>
@@ -150,27 +150,27 @@ export default {
 			let errors = {}, hasErrors = false;
 
 			if (this.hostPort && this.hostPort.length > 0 && portRegex.exec(this.hostPort) === null) {
-				errors['hostPort'] = 'host port must match the format :9982';
+				errors['hostPort'] = 'host port must match the format :4282';
 				hasErrors = true;
 			}
 
 			if (this.siaMuxWSPort && this.siaMuxWSPort.length > 0 && portRegex.exec(this.siaMuxWSPort) === null) {
-				errors['siaMuxWSPort'] = 'SiaMux port must match the format :9984';
+				errors['siaMuxWSPort'] = 'SiaMux port must match the format :4284';
 				hasErrors = true;
 			}
 
 			if (this.siaMuxPort && this.siaMuxPort.length > 0 && portRegex.exec(this.siaMuxPort) === null) {
-				errors['siaMuxPort'] = 'SiaMux port must match the format :9983';
+				errors['siaMuxPort'] = 'SiaMux port must match the format :4283';
 				hasErrors = true;
 			}
 
 			if (this.rpcPort && this.rpcPort.length > 0 && portRegex.exec(this.rpcPort) === null) {
-				errors['rpcPort'] = 'RPC port must match the format :9981';
+				errors['rpcPort'] = 'RPC port must match the format :4281';
 				hasErrors = true;
 			}
 
 			if (this.apiAddr && this.apiAddr.length > 0 && listenRegex.exec(this.apiAddr) === null) {
-				errors['apiAddr'] = 'API Address must match the format localhost:9980';
+				errors['apiAddr'] = 'API Address must match the format localhost:4280';
 				hasErrors = true;
 			}
 
