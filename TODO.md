@@ -1,4 +1,4 @@
-### Sia Host Manager To-Do
+### ScPrime Host Manager To-Do
 
 #### Package
 
@@ -11,7 +11,7 @@
 
 #### Bugs
 
-+ Fix issue when Sia is running but not fully loaded throwing exceptions
++ Fix issue when ScPrime is running but not fully loaded throwing exceptions
 
 #### Clean up
 
