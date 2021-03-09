@@ -23,9 +23,9 @@ module.exports = {
 			outputDir: 'dist',
 			nodeIntegration: true,
 			builderOptions: {
-				appId: 'com.siacentral.host-desktop',
-				productName: 'Sia Host Manager',
-				copyright: '2019 Sia Central',
+				appId: 'com.scprime.host-desktop',
+				productName: 'ScPrime Host Manager',
+				copyright: '2021 ScPrime',
 				afterSign: 'build/scripts/notarize.js',
 				afterAllArtifactBuild: 'build/scripts/sign.js',
 				/* eslint-disable no-template-curly-in-string */
@@ -50,7 +50,7 @@ module.exports = {
 					entitlementsInherit: 'build/entitlements.mac.plist'
 				},
 				linux: {
-					executableName: 'Sia Host Manager',
+					executableName: 'ScPrime Host Manager',
 					/* eslint-disable no-template-curly-in-string */
 					artifactName: '${productName}-v${version}.${ext}',
 					target: [
@@ -72,10 +72,9 @@ module.exports = {
 					perMachine: true
 				},
 				publish: {
-					provider: 'generic',
-					/* eslint-disable no-template-curly-in-string */
-					url: 'https://public.siacentral.com/host-manager/releases/${channel}',
-					channel: 'latest'
+          provider: "github",
+          owner: "EvilRedHorse",
+          repo: "host-manager",
 				}
 			}
 		}
