@@ -15,7 +15,7 @@ async function createWindow() {
 		height: 800,
 		minWidth: 800,
 		minHeight: 600,
-		title: 'Sia Host Manager',
+		title: 'ScPrime Host Manager',
 		icon: path.join(__static, 'icon.png'),
 		autoHideMenuBar: true,
 		backgroundColor: '#1d1e21',
@@ -41,7 +41,7 @@ async function createWindow() {
 	if (process.env.WEBPACK_DEV_SERVER_URL) {
 		// Load the url of the dev server if in development mode
 		mainWindow.loadURL(process.env.WEBPACK_DEV_SERVER_URL, {
-			userAgent: 'Sia-Agent'
+			userAgent: 'ScPrime-Agent'
 		});
 
 		if (!process.env.IS_TEST) mainWindow.webContents.openDevTools();
@@ -49,7 +49,7 @@ async function createWindow() {
 		createProtocol('app');
 		// Load the index.html when not in development
 		mainWindow.loadURL('app://./index.html', {
-			userAgent: 'Sia-Agent'
+			userAgent: 'ScPrime-Agent'
 		});
 	}
 
