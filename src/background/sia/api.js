@@ -40,11 +40,11 @@ async function sendJSONRequest(url, opts) {
 function getDefaultSiaPath() {
 	switch (process.platform) {
 	case 'win32':
-		return path.join(process.env.LOCALAPPDATA, 'Sia');
+		return path.join(process.env.LOCALAPPDATA, 'ScPrime');
 	case 'darwin':
-		return path.join(process.env.HOME, 'Library', 'Application Support', 'Sia');
+		return path.join(process.env.HOME, 'Library', 'Application Support', 'ScPrime');
 	default:
-		return path.join(process.env.HOME, '.sia');
+		return path.join(process.env.HOME, '.scprime');
 	}
 }
 
@@ -53,8 +53,8 @@ export default class SiaApiClient {
 		opts = opts || {};
 
 		this.config = {
-			siad_api_addr: opts.siad_api_addr || 'localhost:9980',
-			siad_api_agent: opts.siad_api_agent || 'Sia-Agent'
+			siad_api_addr: opts.siad_api_addr || 'localhost:4280',
+			siad_api_agent: opts.siad_api_agent || 'ScPrime-Agent'
 		};
 
 		if (typeof opts.siad_api_password === 'string' && opts.siad_api_password.trim().length !== 0)
@@ -65,8 +65,8 @@ export default class SiaApiClient {
 		if (this._defaultApiPassword)
 			return this._defaultApiPassword;
 
-		if (process.env.SIA_API_PASSWORD && process.env.SIA_API_PASSWORD.length > 0) {
-			this._defaultApiPassword = process.env.SIA_API_PASSWORD;
+		if (process.env.SCPRIME_API_PASSWORD && process.env.SCPRIME_API_PASSWORD.length > 0) {
+			this._defaultApiPassword = process.env.SCPRIME_API_PASSWORD;
 
 			return this._defaultApiPassword;
 		}
