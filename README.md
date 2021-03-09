@@ -1,11 +1,9 @@
-# Sia Host Manager
+# ScPrime Host Manager
 
-![siacentral+sia](https://imgur.com/MtDubn1.png)
+An improved interface for ScPrime network hosts. Get accurate and complete statistics and 
+monitor the health of your host. Replaces or runs alongside ScPrime-UI.
 
-An improved interface for Sia network hosts. Get accurate and complete statistics and 
-monitor the health of your host. Replaces or runs alongside Sia-UI.
-
-Sia Host Manager combines information from your Sia node as well as information from the blockchain to display more accurate financial and health statistics.
+ScPrime Host Manager combines information from your ScPrime node as well as information from the blockchain to display more accurate financial and health statistics.
 
 ## Features
 
@@ -18,11 +16,11 @@ Sia Host Manager combines information from your Sia node as well as information 
 
 ## Screenshots
 
-![alerts](https://siacentral-public.s3.us-east-2.amazonaws.com/res/alerts.png)
-![dashboard](https://siacentral-public.s3.us-east-2.amazonaws.com/res/dashboard.png)
-![storage](https://siacentral-public.s3.us-east-2.amazonaws.com/res/storage.png)
-![contracts](https://siacentral-public.s3.us-east-2.amazonaws.com/res/contracts.png)
-![config](https://siacentral-public.s3.us-east-2.amazonaws.com/res/config.png)
+<!-- ![alerts](https://siacentral-public.s3.us-east-2.amazonaws.com/res/alerts.png)  -->
+<!-- ![dashboard](https://siacentral-public.s3.us-east-2.amazonaws.com/res/dashboard.png)  -->
+<!-- ![storage](https://siacentral-public.s3.us-east-2.amazonaws.com/res/storage.png)  -->
+<!-- ![contracts](https://siacentral-public.s3.us-east-2.amazonaws.com/res/contracts.png) -->
+<!-- ![config](https://siacentral-public.s3.us-east-2.amazonaws.com/res/config.png)  -->
 
 ## Project setup
 
@@ -32,11 +30,11 @@ Sia Host Manager combines information from your Sia node as well as information 
 npm install
 ```
 
-2. Add siad binaries for your platform to `build/bin/{os}` you can get the latest binaries from https://sia.tech/get-started
+2. Add siad binaries for your platform to `build/bin/{os}` you can get the latest binaries from https://scpri.me/software/
 
-+ Linux: `build/bin/linux/siad`
-+ OS X: `build/bin/mac/siad`
-+ Windows: `build/bin/win/siad`
++ Linux: `build/bin/linux/spd`
++ OS X: `build/bin/mac/spd`
++ Windows: `build/bin/win/spd`
 
 
 ### Development
